@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Декоративные 3D панели">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./libs/fancybox-master/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <script type="text/javascript" src="/a-scripts/autvrk.js"></script>
+
+    <title>Декоративные 3D панели</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <!--		Welcome-->
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__content">
+                    <div class="welcome__top">
+                        <div class="logo">
+                            <img src="img/welcome/logo.png" alt="">
+                        </div>
+                        <h3 class="welcome__subtitle">Блоки интерьерного покрытия</h3>
+                        <h1 class="welcome__title">Легкий ремонт</h1>
+                        <h3 class="welcome__subtitle"><strong>для уютной атмосферы</strong></h3>
+                    </div>
+                    <div class="welcome__main">
+                        <img class="welcome__img" src="img/welcome/1.png" alt="161 покупка за сегодня">
+
+                        <div class="welcome__form">
+                            <div class="form__title">Акция! <span>50%</span> Скидка</div>
+                            <div class="form__price">
+                                <span class="form__price--old"><span class="old-price">6380</span>руб.</span>
+                                <span class="form__price--new"><span class="new-price">2999</span>руб.</span>
+                            </div>
+                            <form class="form" action="/order" method="POST">
+                                <input class="form__input" type="text" name="name" placeholder="Введите имя" required />
+                                <input class="form__input" type="tel" name="phone" placeholder="Введите номер телефона"
+                                    required />
+                                <button type="submit" class="form__button">Зaкaзaть</button>
+                            </form>
+                        </div>
+
+                        <div class="welcome__info">
+                            <div class="welcome__info--title">До конца акции
+                                <div class="countbox"></div>
+                            </div>
+
+                            <div class="welcome__info--des">
+                                <p><img src="img/welcome/check.svg" alt="">Установка без клея без клея</p>
+                                <p><img src="img/welcome/check.svg" alt="">Для любых поверхностей</p>
+                                <p><img src="img/welcome/check.svg" alt="">Широкий выбор текстур</p>
+                                <p><img src="img/welcome/check.svg" alt="">Быстро закрепляется на любой
+                                    поверхности</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    Video-->
+        <section class="video">
+            <div class="container">
+                <div class="video__content">
+                    <div class="video__block">
+                        <h3>Что такое 3D панели?</h3>
+                        <h4>Это самый простой способ навести уют в доме</h4>
+                        <p>Установка панелей не требует клея и устанавливается буквально за 5 секунд на любую
+                            поверхность
+                            благодаря сверхнадежной липучке.</p>
+                        <p>Просто снимите защиту с липкого слоя, прижмите панель к поверхности, отпустите – теперь у вас
+                            стильное покрытие в любом помещени.</p>
+                    </div>
+                    <div class="video__block">
+                        <iframe src="https://www.youtube.com/embed/tZv_GO4E87I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    Catalog-->
+        <section class="catalog">
+            <div class="container">
+                <h3 class="catalog__title">Доступные цвета и материалы</h3>
+                <div class="catalog__content">
+                    <div class="catalog__cards">
+                        <div class="catalog__card">
+                            <a data-fancybox="gallery" href="img/catalog/0.jpg"><img src="img/catalog/0.jpg"></a>
+                            <p>Лофт<br> буро-коричневый</p>
+                        </div>
+                        <div class="catalog__card">
+                            <a data-fancybox="gallery" href="img/catalog/1.jpg"><img src="img/catalog/1.jpg"></a>
+                            <p>Лофт <br> серый</p>
+                        </div>
+                        <div class="catalog__card">
+                            <a data-fancybox="gallery" href="img/catalog/5.jpg"><img src="img/catalog/5.jpg"></a>
+                            <p>Мозаика <br> белая</p>
+                        </div>
+                        <div class="catalog__card">
+                            <a data-fancybox="gallery" href="img/catalog/12.jpg"><img src="img/catalog/12.jpg"></a>
+                            <p>Планкен <br> парижский туман</p>
+                        </div>
+                        <div class="catalog__card">
+                            <a data-fancybox="gallery" href="img/catalog/15.jpg"><img src="img/catalog/15.jpg"></a>
+                            <p>Белый <br> кирпич</p>
+                        </div>
+                    </div>
+                    <a href="#welcome" class="anchor-button">Зaкaзaть</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!--    Guarantee-->
+        <section class="guarantee">
+            <div class="container">
+                <div class="guarantee__content">
+                    <h3>Надежно! Гарантия 5 лет!</h3>
+                    <img src="img/divided.svg" alt="" class="guarantee__img">
+                    <div class="guarantee__blocks">
+                        <div class="guarantee__block">
+                            <img src="img/guarantee/1.jpg" alt="">
+                        </div>
+                        <div class="guarantee__block">
+                            <p>
+                                Блоки долговечны и безопасны - ремот должен быть навсегда. Панели можно мыть, а значит
+                                их
+                                можно использовать в любом помещении: они не боятся воды, жира, краски - любое
+                                загрязнение
+                                легко смыть.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--    Installation-->
+        <section class="installation">
+            <div class="container">
+                <div class="installation__content">
+                    <h3>Надежно! Гарантия 5 лет!</h3>
+                    <h4>Наши панели асболютно универсальны и подойдут для люого помещения!</h4>
+                    <img src="img/divided-l.svg" alt="" class="guarantee__img">
+                    <div class="installation__items">
+                        <div class="installation__item">
+                            <img src="img/installation/1.svg" alt="">
+                            <p>В ПРИХОЖЕЙ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/2.svg" alt="">
+                            <p>НА ДАЧЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/3.svg" alt="">
+                            <p>В ГАРАЖЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/4.svg" alt="">
+                            <p>В ЛЮБОЙ КОМНАТЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/5.svg" alt="">
+                            <p>В ПОДВАЛЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/6.svg" alt="">
+                            <p>В ПОГРЕБЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/7.svg" alt="">
+                            <p>В САРАЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/8.svg" alt="">
+                            <p>В ТУАЛЕТЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/9.svg" alt="">
+                            <p>В БЕСЕДКЕ</p>
+                        </div>
+                        <div class="installation__item">
+                            <img src="img/installation/10.svg" alt="">
+                            <p>НА ВЕРАНДЕ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    Simply-->
+        <section class="simply">
+            <div class="container">
+                <div class="simply__content">
+                    <h3>Надежно! Гарантия 5 лет!</h3>
+                    <h4>Наши панели асболютно универсальны и подойдут для люого помещения!</h4>
+                    <img src="img/divided.svg" alt="" class="guarantee__img">
+                    <div class="simply__blocks">
+                        <div class="simply__block">
+                            <p class="simply__block--title"><strong>Для установки панелей достаточно:</strong></p>
+                            <div class="simply__cards">
+                                <div class="simply__card">
+                                    <img src="img/simply/1.jpg" alt="">
+                                    <p>Отделить защитный слой от клеевого</p>
+                                </div>
+                                <div class="simply__card">
+                                    <img src="img/simply/2.jpg" alt="">
+                                    <p>Прижать к любой поверхности</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simply__block">
+                            <p class="simply__block--title">Липучка обладает <strong>повышенной адгезией</strong> к
+                                любым
+                                строительным материалам:</p>
+                            <div class="simply__items">
+                                <div class="simply__item">
+                                    <img src="img/simply/3.jpg" alt="">
+                                    <p>МЕТАЛЛ</p>
+                                </div>
+                                <div class="simply__item">
+                                    <img src="img/simply/4.jpg" alt="">
+                                    <p>БЕТОН</p>
+                                </div>
+                                <div class="simply__item">
+                                    <img src="img/simply/5.jpg" alt="">
+                                    <p>КИРПИЧ</p>
+                                </div>
+                                <div class="simply__item">
+                                    <img src="img/simply/6.jpg" alt="">
+                                    <p>ДЕРЕВО</p>
+                                </div>
+                                <div class="simply__item">
+                                    <img src="img/simply/7.jpg" alt="">
+                                    <p>КЕРАМИКА</p>
+                                </div>
+                                <div class="simply__item">
+                                    <img src="img/simply/8.jpg" alt="">
+                                    <p>ПЛАСТИК</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    Characteristic-->
+        <section class="characteristic">
+            <div class="container">
+                <div class="characteristic__content">
+                    <div class="characteristic__blocks">
+                        <div class="characteristic__block">
+                            <img src="img/characteristic/1.png" alt="">
+                        </div>
+                        <div class="characteristic__block">
+                            <h3>Подробные технические характеристики Smart Light</h3>
+                            <p>Различные цвета. Имитация натурального дерева, мрамора, кирпича.</p>
+                            <p>Все, что нужно для комфортного интерьера! Наклеивается как обычная самоклеящаяся пленка.
+                            </p>
+                            <p>Звукоизоляционный эффект.</p>
+                            <p>Усиливает теплоизоляцию зимой и контролирует конденсацию.</p>
+                            <p>Амортизирующий эффект для безопасности в детской комнате.</p>
+                            <p>В наборе 10 листов.</p>
+                            <p>Размер листа: 70х77 см.</p>
+                            <p>Общая площадь набора: 5 м2.</p>
+                            <a href="#welcome" class="anchor-button">Зaкaзaть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    reviews-->
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__content">
+                    <h3>Отзывы покупателей</h3>
+                    <img src="img/divided.svg" alt="" class="guarantee__img">
+                    <div class="reviews__blocks">
+                        <div class="reviews__block">
+                            <img class="reviews__avatar" src="img/reviews/ava-1.jpg" alt="">
+                            <h5>“Подумываем взять еще несколько таких”</h5>
+                            <h4>Михаил Никифорович, 58 лет, Екатеринбург</h4>
+                            <p>Живем с женой в загородном доме и частенько задумывали обновить интерьер. Теперь все
+                                просто
+                                великолепно - как в люксовом доме!</p>
+                            <img class="reviews__block--img" src="img/reviews/1.jpg" alt="">
+                        </div>
+                        <div class="reviews__block">
+                            <img class="reviews__avatar" src="img/reviews/ava-2.jpg" alt="">
+                            <h5>“Жаль, что раньше такой не поставил”</h5>
+                            <h4>Андрей Порохов, 35 лет, Уфа</h4>
+                            <p>Заказал себе сразу 20 м2 - обклеил себе санузел и осталось на гараж. Жаль, что ну нашел
+                                эти
+                                панели раньше</p>
+                            <img class="reviews__block--img" src="img/reviews/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    order-->
+        <section class="order">
+            <div class="container">
+                <div class="order__content">
+                    <h3>Как заказать панели</h3>
+                    <img src="img/divided.svg" alt="" class="guarantee__img">
+                    <div class="order__items">
+                        <div class="order__item">
+                            <img src="img/order/1.svg" alt="">
+                            <p>Вы <strong>оставляете заявку</strong> на нашем сайте</p>
+                        </div>
+                        <div class="order__item">
+                            <img src="img/order/2.svg" alt="">
+                            <p>Мы <strong>перезвоним</strong> вам для уточнения адреса доставки</p>
+                        </div>
+                        <div class="order__item">
+                            <img src="img/order/3.svg" alt="">
+                            <p>Мы <strong>доставим</strong> панели в любую точку страны</p>
+                        </div>
+                        <div class="order__item">
+                            <img src="img/order/4.svg" alt="">
+                            <p>Вы <strong>оплачиваете</strong> его при получении</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--		Welcome-->
+        <section class="welcome" id="welcome">
+            <div class="container">
+                <div class="welcome__content">
+                    <div class="welcome__top">
+                        <div class="logo">
+                            <img src="img/welcome/logo.png" alt="">
+                        </div>
+                        <h3 class="welcome__subtitle">Блоки интерьерного покрытия</h3>
+                        <h1 class="welcome__title">Легкий ремонт</h1>
+                        <h3 class="welcome__subtitle"><strong>для уютной атмосферы</strong></h3>
+                    </div>
+                    <div class="welcome__main">
+                        <img class="welcome__img" src="img/welcome/1.png" alt="161 покупка за сегодня">
+
+                        <div class="welcome__form">
+                            <div class="form__title">Акция! <span>50%</span> Скидка</div>
+                            <div class="form__price">
+                                <span class="form__price--old"><span class="old-price">6380</span>руб.</span>
+                                <span class="form__price--new"><span class="new-price">2999</span>руб.</span>
+                            </div>
+                            <form class="form" action="/order" method="POST">
+                                <input class="form__input" type="text" name="name" placeholder="Введите имя" required />
+                                <input class="form__input" type="tel" name="phone" placeholder="Введите номер телефона"
+                                    required />
+                                <button type="submit" class="form__button">Зaкaзaть</button>
+                            </form>
+                        </div>
+
+                        <div class="welcome__info">
+                            <div class="welcome__info--title">До конца акции
+                                <div class="countbox"></div>
+                            </div>
+
+                            <div class="welcome__info--des">
+                                <p><img src="img/welcome/check.svg" alt="">Установка без клея без клея</p>
+                                <p><img src="img/welcome/check.svg" alt="">Для любых поверхностей</p>
+                                <p><img src="img/welcome/check.svg" alt="">Широкий выбор текстур</p>
+                                <p><img src="img/welcome/check.svg" alt="">Быстро закрепляется на любой
+                                    поверхности</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="../../politics.html" target="_blank">Политика конфиденциальности</a>
+                <a href="../../offer.html" target="_blank">Пользовательское соглашение</a>
+                <img src="img/footer.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/scripts.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick/slick.js"></script>
+    <script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="js/counter.js"></script>
+</body>
+
+</html>

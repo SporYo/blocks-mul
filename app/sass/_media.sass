@@ -1,0 +1,179 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.container
+		width: 100%
+		padding: 0 10px
+	.welcome
+		width: 100%
+		padding: 0 10px
+	.video
+		&__block
+			iframe
+				width: 100%
+				height: 300px
+	.simply
+		h3, h4
+			text-align: center
+		&__blocks
+			flex-direction: column
+			align-items: center
+		&__block
+			width: 100%
+			&--title
+				text-align: center
+		&__cards
+			align-items: center
+			justify-content: center
+	.characteristic
+		padding-bottom: 10px
+		&__blocks
+			flex-direction: column
+			align-items: center
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.welcome
+		background: url("../img/welcome/bg-mob.png")
+		background-size: cover
+		&__main
+			flex-direction: column
+		&__img
+			display: none
+		&__top
+			text-align: center
+		&__form
+			margin-bottom: 30px
+			width: 360px
+		&__info
+			margin-bottom: 30px
+			width: 360px
+	.video
+
+		&__content
+			flex-direction: column
+			align-items: center
+		&__block
+			width: 70%
+	.catalog
+		padding-bottom: 10px
+	.guarantee
+		padding-bottom: 10px
+		h3
+			font-size: 28px
+			text-align: center
+		&__blocks
+			flex-direction: column
+			align-items: center
+		&__block
+			width: 100%
+			p
+				font-size: 22px
+	.installation
+		padding-bottom: 10px
+	.simply
+		padding-bottom: 10px
+	.reviews
+		padding-bottom: 10px
+		&__blocks
+			flex-direction: column
+			align-items: center
+		&__block
+			width: 70%
+			margin-bottom: 30px
+	.order
+		padding-bottom: 10px
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.welcome
+		&__title
+			font-size: 42px
+			margin-top: 0
+		&__subtitle
+			font-size: 22px
+		&__main
+			margin-top: 10px
+	.video
+		&__block
+			width: 80%
+	.simply
+		&__cards
+			flex-direction: column
+			p
+				font-size: 16px
+
+
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.welcome
+		&__form
+			width: 100%
+		&__info
+			width: 100%
+	.video
+		padding-bottom: 10px
+		&__block
+			width: 100%
+			height: 250px
+			margin-bottom: 30px
+	.countbox-hours1,
+	.countbox-mins1,
+	.countbox-secs1,
+	.countbox-hours2,
+	.countbox-mins2,
+	.countbox-secs2
+		width: 25px
+		height: 35px
+	.catalog
+		padding-bottom: 10px
+	.simply
+		&__item
+			width: 50%
+	.reviews
+		&__block
+			width: 90%
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
